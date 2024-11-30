@@ -1,57 +1,60 @@
+@font-face {
+  font-family: "Lato";
+  src: url('../fonts/Orbitron-Regular.ttf');
+}
 
-@font-face { font-family: "Lato"; src: url('../fonts/Orbitron-Regular.ttf'); }
 body {
-	background-image: url(../img/LMY.jpg);
-	background-size: cover;
-	background-position: top center;
-	background-color:#FFF;
-	overflow:hidden;
+  background-image: url(../img/LMY.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-color: #FFF;
+  overflow: hidden;
 }
 
 .content {
-	display: absolute;
-	width: 100%;
-	top: 0;
-	left: 0;
-	display: table;
-	vertical-align: middle;
-	height: 100vh;
+  display: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: table;
+  vertical-align: middle;
+  height: 100vh;
 }
 
 .content .inner {
-	display:table-cell;
-	vertical-align: middle;
-	font-family: 'Lato', sans-serif;
-}
-.date{
-letter-spacing: 6px;
-font-size: 40px;
-font-weight: 85;
-	font-family: "Lato";
-	color:#FFF;
-  
-
+  display: table-cell;
+  vertical-align: middle;
+  font-family: 'Lato', sans-serif;
 }
 
+.date {
+  letter-spacing: 6px;
+  font-size: 40px;
+  font-weight: 85;
+  font-family: "Lato";
+  color: #FFF;
 
-.time{
-opacity:0.9;
-letter-spacing: 3px;
-font-weight: 100;
-font-size: 84px;	
-font-family: "Lato";
-	color:#FFF;
-  
+
+}
+
+.time {
+  opacity: 0.9;
+  letter-spacing: 3px;
+  font-weight: 100;
+  font-size: 40px;
+  font-family: "Lato";
+  color: #FFF;
+
 }
 
 
 
-#particles-js{
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 * {
@@ -68,73 +71,59 @@ body {
 }
 
 #drag {
-  width: 430px;
-  height: 170px;
-
-z-index:9;
-  
-position: absolute;
-
-
-
-                
-    
-    
-    text-align:center;
-    border-radius:5px;
-
-
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 400px;
+  height: 145px;
+  position: fixed; 
+  top: 20px;     
+  left: 20px;    
+  right: 20px;   
+  bottom: 20px;  
+  z-index: 100;
+  margin-bottom: 2%;
+  margin-top: 36%;
+  margin-left: 65%;
+  border-radius: 5px;
   text-align: center;
-  cursor: move;
-  
-  
 }
 
 
-
-
-
-.Butt { float: right;
-margin-right: 15px;
-z-index: 10;
-
+.Butt {
+  float: right;
+  margin-right: 15px;
+  z-index: 10;
 }
 
-
-
-
-button{
-
+button {
   width: 35px;
   height: 35px;
   cursor: pointer;
   margin: 10px auto;
-  border: solid 2px rgba(255,255,255,0.6);
-box-shadow:  0 0 30px rgba(0,0,0,0.2);
-  opacity: 0.4;
+  border: solid 2px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 30px rgba(211, 211, 211, 0.6);
+  opacity: 0;
   border-radius: 50px;
   font: normal 12px;
-font-family: 'Digital-7';
+  font-family: 'Digital-7';
   color: #fff;
   text-align: center;
   -o-text-overflow: clip;
   text-overflow: clip;
   letter-spacing: 1px;
-  background: rgba(0,0,0,0);
+  background: rgba(255, 255, 255, 0.4);
   -webkit-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
   -moz-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
   -o-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
   transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
 }
-}
+
 
 
 button:hover {
   width: 65px;
   height: 65px;
 
-  color: rgba(255,255,255,1);
-  -webkit-box-shadow: 0 0 6px 2px rgba(244,0,106,0.88) inset;
-  box-shadow: 0 0 6px 2px rgba(244,0,106,0.88) inset;
+  color: rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0 0 6px 2px rgba(244, 0, 106, 0.88) inset;
+  box-shadow: 0 0 6px 2px rgba(244, 0, 106, 0.88) inset;
 }
-
